@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+   
+
+}
+
+body{
+    /* background: #a0a0ad; */
+    height: 100vh;
+    background: #464646;
+}
+
+
+
+
+
+
+@-webkit-keyframes rotating{
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+  svg {
+    -webkit-animation: rotating 5s linear infinite;
+    -moz-animation: rotating 5s linear infinite;
+    -ms-animation: rotating 5s linear infinite;
+    -o-animation: rotating 5s linear infinite;
+    animation: rotating 5s linear infinite;
+    
+    width: 50px;
+    height: 50px; 
+    text-align: center;
+    padding: 0 10px;
+    
+  }
+
+
+
+
+.admission-open{
+    width: 100%;
+   align-items: center;
+   color: #fff;
+   display: flex;
+   text-align: center;
+   box-sizing: border-box;
+   font-size: 20px;
+   justify-content: center;
+   text-decoration-thickness: auto;
+   background-color: #ea4f4c;
+   padding: 10px;
+   position: relative;
+  
+
+}
+
+
+nav{
+    overflow: hidden;
+    min-height: 80px;
+    box-sizing: border-box;
+    width: 100%;
+    background: #141414;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    z-index: 2;
+
+
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+.logo{
+    font-size: 30px;
+    color: white;
+    
+    font-weight: 600;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+
+
+}
+.menu-bar{
+    z-index: 10;
+}
+
+nav ul li{
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 300ms ease;
+}
+
+nav ul li a:hover{
+    background: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    color:#ea4f4c;
+}
+nav ul li a.active{
+    background: #ea4f4c;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    color:white;
+}
+
+.menu-btn i{
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+
+}
+#click{
+    display: none;
+}
+
+/*------------------------- Image------------------ */
+
+.bg-image {
+    background-image: url("/img/11.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    height: 80%;
+    position: relative;
+
+    
+  }
+  /* .img11{
+      width: 100%;
+  } */
+
+
+  .text-block {
+    position: absolute;
+    top: 45%;
+    left: 8%;
+    font-size: 50px;
+    color: #000;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-shadow: 30px #141414;
+  }
+
+@media(max-width:940px){
+
+   
+
+
+    nav{
+        padding: 0 5px 0 10px;
+
+    }
+
+ 
+
+    .menu-btn i{
+        display: inline-block;
+    }
+    #click:checked ~.menu-btn i::before{
+        content: "\f00d";
+    }
+
+    .logo{
+       font-size: 20px;
+       position: relative;
+       text-align: center;
+       margin-right: 10px;
+       
+    }
+    nav ul{
+        position: fixed;
+        box-sizing: border-box;
+        top: 0;
+        left: -100%;
+        background-color: black;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 300ms ease ;
+
+    }
+
+    #click:checked ~ ul{
+        left: 0;
+    }
+
+    nav ul li{
+        margin: 40px 0;
+        
+
+    }
+    nav ul li a:hover{
+        background: transparent;
+        padding: 0;
+        
+    }
+    nav ul li a.active{
+        background: none;
+        color:#ea4f4c;
+        
+    }
+}
+
+@media(max-width:450px) {
+    .bg-image{
+        height:1000px;
+    }
+}
