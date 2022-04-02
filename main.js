@@ -21,6 +21,18 @@ function myFunction() {
     }
 }
 
+
+//============================ menu btn possition fixed ======================
+
+
+document.getElementById("click").addEventListener("change", () => {
+  if (document.getElementById("click").checked) {
+    document.querySelector("body").style.position = "fixed";
+  } else {
+    document.querySelector("body").style.position = "static";
+  }
+});
+
 //============================ slide show ======================
 
 let slideIndex = 1;
