@@ -71,7 +71,6 @@ body{
    display: flex;
    text-align: center;
    box-sizing: border-box;
-   font-size: 20px;
    justify-content: center;
    text-decoration-thickness: auto;
    background-color: #ea4f4c;
@@ -81,6 +80,11 @@ body{
 
 }
 
+#AY{
+    font-size: 30px;
+    font-weight: 500;
+}
+/* -----------------nav bar------------ */
 
 nav{
     overflow: hidden;
@@ -93,6 +97,8 @@ nav{
     justify-content: space-between;
     padding: 0 50px 0 100px;
     z-index: 2;
+
+    
 
 
 }
@@ -118,7 +124,7 @@ nav ul{
 
 }
 .menu-bar{
-    z-index: 10;
+    z-index: 1;
 }
 
 nav ul li{
@@ -166,7 +172,7 @@ nav ul li a.active{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-    height: 80%;
+    height: 100%;
     position: relative;
 
     
@@ -184,17 +190,172 @@ nav ul li a.active{
     color: #000;
     padding-left: 20px;
     padding-right: 20px;
-    text-shadow: 30px #141414;
   }
 
-@media(max-width:940px){
+  /*------------------------- Marquee------------------ */
 
-   
+  .AO-AO{
+    padding: 20px 30px;
+      text-align: center;
+  }
+#AO{
+    color:#ff2824;
+    font-size: 30px;
+}
+
+/*------------------------- slide show------------------ */
+.gallary{
+  background-color: #000;
+}
+
+.gal{
+text-align: center;
+color: #ea4f4c;
+font-weight: 500;
+font-size: 38px;
+padding: 20px;
+}
+
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  background-color: rgba(0,0,0,0.8);
+  color: #ea4f4c;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/6 etc) */
+.numbertext {
+  color: #ea4f4c;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #ea4f4c;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+/*------------------------- About us------------------ */
+.about-us-text{
+  text-align: center;
+color: #ea4f4c;
+font-weight: 500;
+font-size: 38px;
+padding: 20px 20px 100px 20px;
+}
+.about-container{
+  padding: 50px ;
+  text-align: left;
+
+}
+.about-title{
+  justify-content: center;
+  color: #fff;
+  padding: 10px; 
+  font-weight: 400;
+  font-size: 20px;
+  display: flex;
+}
+.about-para{
+  color: #ffffff80;
+  padding: 10px;
+  display: block;
+  text-align: justify;
+
+}
+.about-image{
+  max-width:380px;
+  margin-left:15px; 
+  float: right;
+}
+.about-text-container{
+  display: flex;
+  padding: 0 100px;
+
+}
+
+
+@media(max-width:940px){
+ 
+    #AY{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
 
 
     nav{
         padding: 0 5px 0 10px;
 
+    }
+
+    .menu-bar{
+        overflow: auto;
     }
 
  
@@ -219,7 +380,7 @@ nav ul li a.active{
         top: 0;
         left: -100%;
         background-color: black;
-        height: 100vh;
+        height: 100%;
         width: 100%;
         display: block;
         text-align: center;
@@ -246,10 +407,65 @@ nav ul li a.active{
         color:#ea4f4c;
         
     }
+
+    .bg-image{
+        height:80%;
+    }
+/* ----------------gallary-------------- */
+.gal{
+
+  font-size: 32px;
+  }
+  /* --------------------------about us ----------------- */
+  .about-us-text{
+
+    font-size: 32px;
+    padding: 20px;
+
+    }
+    
 }
 
-@media(max-width:450px) {
-    .bg-image{
-        height:1000px;
+
+
+/* On smaller screens, decrease text size slide show */
+
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+  @media(max-width:450px) {
+    .about-container{
+      padding: 10px ;
     }
-}
+  }
+
+  @media(max-width:1000px){
+    .about-image{
+      margin-left:0; 
+      float: none;
+      width: 200px;
+      display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    
+    }
+    /* about us   */
+    .about-text-container{
+      display: block;
+      padding: 0;
+    }
+  }
+
+  @media(max-width:600px){
+    .text-block {
+      position: absolute;
+      top: 14%;
+      left: 28%;
+      font-size: 50px;
+      color: #000;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }

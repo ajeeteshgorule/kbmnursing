@@ -2,95 +2,191 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr.K.B.Mapari Institute of Nursing</title>
-    <link rel="stylesheet" href="style.css">
-    <!--font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr.K.B.Mapari Institute of Nursing,(ANM),Lonar</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- ============================= font ============================= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans&display=swap"
+    rel="stylesheet">
 
-    <!--icon -->
+  <!-- ============================= icon ============================= -->
 
-    <script src="https://kit.fontawesome.com/b35cd77d34.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/b35cd77d34.js" crossorigin="anonymous"></script>
+
+  <style>
+    button {
+      /* Variables */
+      --button_radius: 0.75em;
+      --button_color: #e8e8e8;
+      --button_outline_color: #ea4f4c;
+      font-size: 17px;
+      font-weight: bold;
+      border: none;
+      border-radius: var(--button_radius);
+      background: var(--button_outline_color);
+    }
+
+    .button_top {
+      display: block;
+      box-sizing: border-box;
+      border: 2px solid var(--button_outline_color);
+      border-radius: var(--button_radius);
+      padding: 0.75em 1.5em;
+      background: var(--button_color);
+      color: var(--button_outline_color);
+      transform: translateY(-0.2em);
+      transition: transform 0.1s ease;
+    }
+
+    button:hover .button_top {
+      /* Pull the button upwards when hovered */
+      transform: translateY(-0.33em);
+    }
+
+    button:active .button_top {
+      /* Push the button downwards when pressed */
+      transform: translateY(0);
+    }
+  </style>
 
 </head>
 
 <body>
-    <div class="admission-open">
-        <svg data-ux="SVG" viewBox=" 0 0 35 35" dataaids="SEASONAL_WINTER_RIGHT_ICON_RENDERED"
-            class="x-el x-el-svg c1-1 c1-2 c1-1a c1-1b c1-1c c1-1d c1-b c1-c c1-d c1-1e c1-1f c1-1g c1-1h c1-e c1-f c1-g">
-            <g stroke="currentColor" fill="none" fill-rule="evenodd">
-                <path
-                    d="M16.724 10.726l4.651 5.349M12.03 16.408L16.8 21.8M16.8 1.8v28M30.8 16.3h-28M15.8 1.3a1 1 0 1 1 1.999 0 1 1 0 0 1-2 0zM30.3 16.3a1 1 0 1 1 1.999 0 1 1 0 0 1-2 0zM1.3 16.3a1 1 0 1 1 1.999 0 1 1 0 0 1-2 0zM15.8 30.8a1 1 0 1 1 1.999 0 1 1 0 0 1-2 0zM23.05 10.05l-12.5 12.5M22.6 9.3a1 1 0 1 1 1.999-.002A1 1 0 0 1 22.6 9.3zM8.8 23.3a1 1 0 1 1 1.999 0 1 1 0 0 1-2 0zM16.99 5.545l10.02 10.961M17 27.3l-10.7-11M27.01 16.131l-10.02 10.96M6.59 17.091l10.02-10.96M22.925 22.086L10.688 9.328M22.459 22.826a1 1 0 1 0 2 .043 1 1 0 0 0-2-.043zM8.953 8.542a1.001 1.001 0 1 0 2.002.04 1.001 1.001 0 0 0-2.002-.04z">
-                </path>
-            </g>
-        </svg> Admission Open For AY 2021 - 2022 <svg data-ux="SVG" viewBox=" 0 0 35 35"
-            dataaids="SEASONAL_WINTER_RIGHT_ICON_RENDERED"
-            class="x-el x-el-svg c1-1 c1-2 c1-1a c1-1b c1-1c c1-1d c1-b c1-c c1-d c1-1e c1-1f c1-1g c1-1h c1-e c1-f c1-g">
-            <g stroke="currentColor" fill="none" fill-rule="evenodd">
-                <path
-                    d="M16.724 10.726l4.651 5.349M12.03 16.408L16.8 21.8M16.8 1.8v28M30.8 16.3h-28M15.8 1.3a1 1 0 1 1 1.999 0 1 1 0 0 1-2 0zM30.3 16.3a1 1 0 1 1 1.999 0 1 1 0 0 1-2 0zM1.3 16.3a1 1 0 1 1 1.999 0 1 1 0 0 1-2 0zM15.8 30.8a1 1 0 1 1 1.999 0 1 1 0 0 1-2 0zM23.05 10.05l-12.5 12.5M22.6 9.3a1 1 0 1 1 1.999-.002A1 1 0 0 1 22.6 9.3zM8.8 23.3a1 1 0 1 1 1.999 0 1 1 0 0 1-2 0zM16.99 5.545l10.02 10.961M17 27.3l-10.7-11M27.01 16.131l-10.02 10.96M6.59 17.091l10.02-10.96M22.925 22.086L10.688 9.328M22.459 22.826a1 1 0 1 0 2 .043 1 1 0 0 0-2-.043zM8.953 8.542a1.001 1.001 0 1 0 2.002.04 1.001 1.001 0 0 0-2.002-.04z">
-                </path>
-            </g>
-        </svg>
-    </div>
-    <nav id="navbar">
-        <div class="logo"> Dr.K.B.Mapari Institute of Nursing</div>
-        <input type="checkbox" id="click">
-        <label for="click" class="menu-btn">
-            <i class="fa-solid fa-bars"></i>
-
-        </label>
-        <ul class="menu-bar">
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="#">Notification</a></li>
-            <li><a href="#">Admission</a></li>
-            <li><a href="#"><label for="click" class="menu-btn">
-                        <i class="fa-solid fa-xmark"></i></a></li>
-
-        </ul>
-    
-    </nav>
-   <!--Image-->
-   <div class="bg-image">
-    <!-- <img class="img11" src="/img/11.jpg" alt="Unable to Load Image"> -->
-    <div class="text-block">
-      <h4>Nature</h4>
-      <p>What a beautiful sunrise</p>
-    </div>
+  <div class="admission-open">
+    <svg data-ux="SVG" viewBox=" 0 0 35 35" dataaids="SEASONAL_WINTER_RIGHT_ICON_RENDERED"
+      class="x-el x-el-svg c1-1 c1-2 c1-1a c1-1b c1-1c c1-1d c1-b c1-c c1-d c1-1e c1-1f c1-1g c1-1h c1-e c1-f c1-g">
+      <g stroke="currentColor" fill="none" fill-rule="evenodd">
+        <path
+          d="M16.724 10.726l4.651 5.349M12.03 16.408L16.8 21.8M16.8 1.8v28M30.8 16.3h-28M15.8 1.3a1 1 0 1 1 1.999 0 1 1 0 0 1-2 0zM30.3 16.3a1 1 0 1 1 1.999 0 1 1 0 0 1-2 0zM1.3 16.3a1 1 0 1 1 1.999 0 1 1 0 0 1-2 0zM15.8 30.8a1 1 0 1 1 1.999 0 1 1 0 0 1-2 0zM23.05 10.05l-12.5 12.5M22.6 9.3a1 1 0 1 1 1.999-.002A1 1 0 0 1 22.6 9.3zM8.8 23.3a1 1 0 1 1 1.999 0 1 1 0 0 1-2 0zM16.99 5.545l10.02 10.961M17 27.3l-10.7-11M27.01 16.131l-10.02 10.96M6.59 17.091l10.02-10.96M22.925 22.086L10.688 9.328M22.459 22.826a1 1 0 1 0 2 .043 1 1 0 0 0-2-.043zM8.953 8.542a1.001 1.001 0 1 0 2.002.04 1.001 1.001 0 0 0-2.002-.04z">
+        </path>
+      </g>
+    </svg>
+    <p id="AY"></p>
+    <svg data-ux="SVG" viewBox=" 0 0 35 35" dataaids="SEASONAL_WINTER_RIGHT_ICON_RENDERED"
+      class="x-el x-el-svg c1-1 c1-2 c1-1a c1-1b c1-1c c1-1d c1-b c1-c c1-d c1-1e c1-1f c1-1g c1-1h c1-e c1-f c1-g">
+      <g stroke="currentColor" fill="none" fill-rule="evenodd">
+        <path
+          d="M16.724 10.726l4.651 5.349M12.03 16.408L16.8 21.8M16.8 1.8v28M30.8 16.3h-28M15.8 1.3a1 1 0 1 1 1.999 0 1 1 0 0 1-2 0zM30.3 16.3a1 1 0 1 1 1.999 0 1 1 0 0 1-2 0zM1.3 16.3a1 1 0 1 1 1.999 0 1 1 0 0 1-2 0zM15.8 30.8a1 1 0 1 1 1.999 0 1 1 0 0 1-2 0zM23.05 10.05l-12.5 12.5M22.6 9.3a1 1 0 1 1 1.999-.002A1 1 0 0 1 22.6 9.3zM8.8 23.3a1 1 0 1 1 1.999 0 1 1 0 0 1-2 0zM16.99 5.545l10.02 10.961M17 27.3l-10.7-11M27.01 16.131l-10.02 10.96M6.59 17.091l10.02-10.96M22.925 22.086L10.688 9.328M22.459 22.826a1 1 0 1 0 2 .043 1 1 0 0 0-2-.043zM8.953 8.542a1.001 1.001 0 1 0 2.002.04 1.001 1.001 0 0 0-2.002-.04z">
+        </path>
+      </g>
+    </svg>
   </div>
 
+  <!-- ============================= Navbar  ============================= -->
+
+
+  <nav id="navbar">
+    <div class="logo"> Dr.K.B.Mapari Institute of Nursing,(ANM),Lonar</div>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+      <i class="fa-solid fa-bars"></i>
+
+    </label>
+    <ul class="menu-bar">
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#">Notification</a></li>
+      <li><a href="#">Admission</a></li>
+      <li><a href="#"><label for="click" class="menu-btn">
+            <i class="fa-solid fa-xmark"></i></a></li>
+
+    </ul>
+
+  </nav>
+
+
+
+  <!-- =============================Image ============================= -->
   <div class="bg-image">
     <!-- <img class="img11" src="/img/11.jpg" alt="Unable to Load Image"> -->
     <div class="text-block">
       <h4>Nature</h4>
       <p>What a beautiful sunrise</p>
+      <button>
+        <span class="button_top"> Admission Open
+        </span>
+      </button>
     </div>
   </div>
-
-  <div class="bg-image">
-    <!-- <img class="img11" src="/img/11.jpg" alt="Unable to Load Image"> -->
-    <div class="text-block">
-      <h4>Nature</h4>
-      <p>What a beautiful sunrise</p>
-    </div>
+  <!-- ============================= ============================= -->
+  <div class="AO-AO">
+    <marquee id="AO"></marquee>
   </div>
 
-  <div class="bg-image">
-    <!-- <img class="img11" src="/img/11.jpg" alt="Unable to Load Image"> -->
-    <div class="text-block">
-      <h4>Nature</h4>
-      <p>What a beautiful sunrise</p>
+  <!-- ============================= gallary ============================= -->
+  <div class="gallary">
+    <h2 class="gal">Gallary</h2>
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <img src="/campuss/1.jpeg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="/campuss/2.jpeg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="/campuss/3.jpeg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="/campuss/7.jpeg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="/campuss/5.jpeg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="/campuss/6.jpeg" style="width:100%">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
     </div>
   </div>
-   
+  <!--============================= About us =========================-->
+
+  <div class="about-container">
+    <h2 class="about-us-text">About Us 
+
+    </h2>
+    <div class="about-text-container">
+    <img class="about-image" src="/img/12.jpg" alt="Pineapple" >
+<div class="about-partition">
+    <h4 class="about-title"> Dr.K.B.Mapari Institute of Nursing,(ANM),Lonar </h4>
+
+
+    <p class="about-para">
+      Dr.K.B.Mapari Institute of Nursing,(ANM),Lonar was established in 2011, in order to fulfill the acute
+      shortage of trained nursing personnel. It is one of the best nursing colleges in lonar(Buldhana). Dr.K.B.Mapari
+      Institute of Nursing,(ANM),Lonar offers a
+      Three Years' Diploma Course in Auxiliary nurse midwife (A.N.M). The Course follows Indian Nursing Council's
+      (I.N.C.) & Maharashtra Nursing Council's (M.N.C.) syllabus, alongwith Director Medical Education & Research (DMER)
+      guidelines.The Institute is being managed by a well qualified faculties.It is well known for its high standards of
+      Nursing Education and excellence in academic achievement. </p>
+    </div>
+
+  </div>
+</div>
 
 
 
@@ -99,20 +195,9 @@
 
 
 
-  <script>
-    window.onscroll = function() {myFunction()};
-    
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
-    
-    function myFunction() {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-      } else {
-        navbar.classList.remove("sticky");
-      }
-    }
-    </script>
+
+  <!--============================= java Script =========================-->
+  <script src="main.js"></script>
 </body>
 
 </html>
