@@ -168,7 +168,7 @@ nav ul li a.active{
 /*------------------------- Image------------------ */
 
 .bg-image {
-    background-image: url("11.jpg");
+    background-image: url("1111.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -184,13 +184,52 @@ nav ul li a.active{
 
   .text-block {
     position: absolute;
-    top: 45%;
+    top: 20%;
     left: 8%;
-    font-size: 50px;
+    font-size: 30px;
     color: #000;
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 600px;
   }
+
+  button {
+    /* Variables */
+    --button_radius: 0.75em;
+    --button_color: #e8e8e8;
+    --button_outline_color: #ea4f4c;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--button_radius);
+    background: var(--button_outline_color);
+  }
+
+  .details-para{
+    padding-bottom: 10px;
+  }
+
+  .button_top {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.75em 1.5em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+  }
+
+  button:hover .button_top {
+    /* Pull the button upwards when hovered */
+    transform: translateY(-0.33em);
+  }
+
+  button:active .button_top {
+    /* Push the button downwards when pressed */
+    transform: translateY(0);
+  }
+
 
   /*------------------------- Marquee------------------ */
 
@@ -318,7 +357,7 @@ padding: 20px 20px 100px 20px;
   color: #fff;
   padding: 10px; 
   font-weight: 400;
-  font-size: 20px;
+  font-size: 25px;
   display: flex;
 }
 .about-para{
@@ -326,16 +365,20 @@ padding: 20px 20px 100px 20px;
   padding: 10px;
   display: block;
   text-align: justify;
+  font-size: 18px;
+  font-weight: 600;
 
 }
 .about-image{
   max-width:380px;
   margin-left:15px; 
-  float: right;
+  max-height: 255px;  
+
 }
 .about-text-container{
   display: flex;
   padding: 0 100px;
+  align-items: center;
 
 }
 
@@ -368,7 +411,7 @@ padding: 20px 20px 100px 20px;
     }
 
     .logo{
-       font-size: 20px;
+       font-size: 28px;
        position: relative;
        text-align: center;
        margin-right: 10px;
@@ -434,38 +477,130 @@ padding: 20px 20px 100px 20px;
     .prev, .next,.text {font-size: 11px}
   }
 
-  @media(max-width:450px) {
-    .about-container{
-      padding: 10px ;
+
+  @media(max-width:1300px) {
+    .text-block {
+      top: 34%;
+      font-size: 20px;
+      padding-right: 200px;
+
+    
     }
+   
   }
 
   @media(max-width:1000px){
+    .text-block {
+      top: 34%;
+      font-size: 20px;
+      padding-right: 200px;
+
+    
+    }
+
+ /* ================about us ======================  */
     .about-image{
       margin-left:0; 
       float: none;
-      width: 200px;
       display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
     
     }
-    /* about us   */
+   
     .about-text-container{
       display: block;
       padding: 0;
     }
   }
 
-  @media(max-width:600px){
+  @media(max-width:800px) {
+    .logo{
+      font-size: 25px;
+    }
+
     .text-block {
-      position: absolute;
-      top: 14%;
-      left: 28%;
-      font-size: 50px;
-      color: #000;
-      padding-left: 20px;
+      top: 24%;
+      font-size: 20px;
+      padding-right: 200px;
+
+    
+    }
+    
+  }
+
+  @media(max-width:600px){
+    .logo{
+      font-size: 23px;
+    }
+
+
+    .bg-image {
+      background-image: url("1112.jpg");
+    }
+
+    .text-block {
+      top: 34%;
+      font-size: 16px;
       padding-right: 20px;
     }
+    .about-image{
+      max-width: 300px;
+    
+    }
+  }
+
+
+  @media(max-width:450px) {
+    .logo{
+      font-size: 20px;
+    }
+
+     /* ================about us ======================  */
+
+    .about-container{
+      padding: 10px ;
+    }
+
+    .about-image{
+      max-width: 200px;
+    
+    }
+  }
+
+  @media(max-width:300px) {
+    .text-block {
+      left: 4%;
+      font-size: 12px;
+      padding: 0;
+
+    }
+  }
+
+  @media(max-height:600px){
+    .text-block {
+      top: 15%;
+      left: 15%;
+      font-size: 16px;
+      padding-right: 20px;
+
+    }
+  }
+
+  @media(max-height:450px) {
+    .text-block {
+      top: 4%;
+      font-size: 12px;
+      padding-right: 20px;
+    }
+    
+  }
+
+  @media(max-height:200px) {
+    .text-block {
+      top: 4%;
+      padding-right: 10px;
+    }
+    
   }
