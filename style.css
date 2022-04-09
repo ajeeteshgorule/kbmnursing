@@ -7,6 +7,10 @@
 
 }
 
+:root{
+  --main-color:#ea4f4c;
+}
+
 body{
     /* background: #a0a0ad; */
     height: 100vh;
@@ -73,7 +77,7 @@ body{
    box-sizing: border-box;
    justify-content: center;
    text-decoration-thickness: auto;
-   background-color: #ea4f4c;
+   background-color: var(--main-color);
    padding: 10px;
    position: relative;
   
@@ -144,10 +148,10 @@ nav ul li a:hover{
     background: #fff;
     padding: 5px 8px;
     border-radius: 5px;
-    color:#ea4f4c;
+    color:var(--main-color);
 }
 nav ul li a.active{
-    background: #ea4f4c;
+    background: var(--main-color);
     padding: 8px 10px;
     border-radius: 5px;
     font-size: 20px;
@@ -196,7 +200,7 @@ nav ul li a.active{
     /* Variables */
     --button_radius: 0.75em;
     --button_color: #e8e8e8;
-    --button_outline_color: #ea4f4c;
+    --button_outline_color: var(--main-color);
     font-size: 17px;
     font-weight: bold;
     border: none;
@@ -206,6 +210,7 @@ nav ul li a.active{
 
   .details-para{
     padding-bottom: 10px;
+    
   }
 
   .button_top {
@@ -249,7 +254,7 @@ nav ul li a.active{
 
 .gal{
 text-align: center;
-color: #ea4f4c;
+color: var(--main-color);
 font-weight: 500;
 font-size: 38px;
 padding: 20px;
@@ -275,7 +280,7 @@ img {vertical-align: middle;}
   padding: 16px;
   margin-top: -22px;
   background-color: rgba(0,0,0,0.8);
-  color: #ea4f4c;
+  color: var(--main-color);
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -304,7 +309,7 @@ img {vertical-align: middle;}
 
 /* Number text (1/6 etc) */
 .numbertext {
-  color: #ea4f4c;
+  color: var(--main-color);
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
@@ -317,7 +322,7 @@ img {vertical-align: middle;}
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #ea4f4c;
+  background-color: var(--main-color);
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -332,6 +337,9 @@ img {vertical-align: middle;}
   animation-name: fade;
   animation-duration: 1.5s;
 }
+.gallary-images{
+  width: 100%;
+}
 
 @keyframes fade {
   from {opacity: .4} 
@@ -342,7 +350,7 @@ img {vertical-align: middle;}
 /*------------------------- About us------------------ */
 .about-us-text{
   text-align: center;
-color: #ea4f4c;
+color: var(--main-color);
 font-weight: 500;
 font-size: 38px;
 padding: 20px 20px 100px 20px;
@@ -381,6 +389,132 @@ padding: 20px 20px 100px 20px;
   align-items: center;
 
 }
+/*------------------------- COURSE OFFERED------------------ */
+.course-container{
+  background-color: #000;
+  color: #fff;
+
+}
+.course{
+  padding:0 100px ;
+  color: #ffffff80;
+}
+.course-title{
+  text-align: center;
+  padding: 30px 100px 0 100px; 
+  font-weight: 800;
+  font-size: 30px;
+}
+.course-details{
+  max-width: 400px;
+}
+.course-info{
+text-align: left;
+max-width: 500px;
+}
+.course-info-title{
+  padding: 20px 0;
+  font-size: 18px;
+
+}
+.course-info-para{
+  padding: 20px 0;
+
+}
+.class-details-para{
+  padding: 10px 0;
+}
+.course-image{
+  align-items: center;
+  justify-content: center;
+}
+.course-image-div{
+  float: right;
+  
+}
+.course-image-bg{
+ 
+  width: 400px;
+}
+
+/*------------------------- contact us------------------ */
+.contact-us{
+  text-align: center;
+  color: white;
+  padding-bottom: 20px;
+}
+.contact-us-title{
+  padding: 70px 0;
+  color:var(--main-color);
+  font-weight: 500;
+  font-size: 38px;
+
+}
+.contact-us-para{
+  padding: 30px 0px;
+  font-size: 22px;
+  font-weight: 500;
+  color: #f7f7f7;
+}
+
+.whatsapp-container{
+  padding: 100px 0;
+}
+.whatsapp{
+  background: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #000;
+    text-decoration: none !important;
+}
+
+.whatsapp-icon{
+  width: 30px;
+}
+.whatsapp-text{
+  color: black;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.tel-div{
+  display: grid;
+  grid-row-gap: 10px;
+}
+.tel{
+  text-decoration: none !important;
+  color: #fff;
+  font-size: 20px;
+}
+.date-time{
+  color: #a4a4a4;
+  font-size: 16px;
+}
+
+/*------------------------- copyright------------------ */
+.copyright{
+  text-align: center;
+  font-size: 16px;
+  padding: 30px 5px;
+  color: #a9a9a9;
+  box-shadow: -5px 0px 10px 0px #333
+}
+.design{
+padding-top: 20px;  
+text-align: center;
+  color: #a9a9a9;
+
+}
+.d-name{
+  text-decoration: none !important;
+  color: #ffffff;
+}
+hr{
+  margin: 20px 30%;
+
+}
+
 
 
 @media(max-width:940px){
@@ -447,7 +581,7 @@ padding: 20px 20px 100px 20px;
     }
     nav ul li a.active{
         background: none;
-        color:#ea4f4c;
+        color:var(--main-color);
         
     }
 
@@ -466,6 +600,18 @@ padding: 20px 20px 100px 20px;
     padding: 20px;
 
     }
+
+      /* --------------------------course----------------- */
+
+
+    .course-image-div{
+      float: none;
+      
+    }
+    .course-image-bg{
+     
+      width: 400px;
+    }
     
 }
 
@@ -482,7 +628,7 @@ padding: 20px 20px 100px 20px;
     .text-block {
       top: 34%;
       font-size: 20px;
-      padding-right: 200px;
+      padding-right: 400px;
 
     
     }
@@ -498,7 +644,7 @@ padding: 20px 20px 100px 20px;
     
     }
 
- /* ================about us ======================  */
+ /* ================ about us ======================  */
     .about-image{
       margin-left:0; 
       float: none;
@@ -513,6 +659,13 @@ padding: 20px 20px 100px 20px;
       display: block;
       padding: 0;
     }
+    /* ================== course ============ */
+    .course-title{
+      font-size: 25px;
+      padding: 30px;
+    }
+    
+    
   }
 
   @media(max-width:800px) {
@@ -521,7 +674,7 @@ padding: 20px 20px 100px 20px;
     }
 
     .text-block {
-      top: 24%;
+      top: 4%;
       font-size: 20px;
       padding-right: 200px;
 
@@ -545,9 +698,32 @@ padding: 20px 20px 100px 20px;
       font-size: 16px;
       padding-right: 20px;
     }
+    .text-block-title{
+      display: inline-block;
+      background-color: #cccccc8c;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+
+    }
+    .details-para{
+      background-color: #cccccc8c;
+     border-bottom-left-radius: 5px;
+     border-bottom-right-radius: 5px;
+     margin-bottom: 10px;
+
+    }
     .about-image{
       max-width: 300px;
     
+    }
+
+    .course{
+      padding: 0 50px;
+    }
+
+    .course-image-bg{
+     
+      width: 300px;
     }
   }
 
@@ -567,6 +743,27 @@ padding: 20px 20px 100px 20px;
       max-width: 200px;
     
     }
+
+    .course{
+      padding: 20px;
+    }
+
+    
+    
+  }
+
+  @media(max-width:550px){
+    .text-block {
+      top: 4%;      
+
+    }
+  }
+
+  @media(max-width:340px){
+    .course-image-bg{
+     
+      width: 200px;
+    }
   }
 
   @media(max-width:300px) {
@@ -576,19 +773,29 @@ padding: 20px 20px 100px 20px;
       padding: 0;
 
     }
+    .whatsapp-text{
+      font-size: 10px;
+    }
+
+    
+  }
+  @media(max-width:220px){
+    .whatsapp-text{
+      font-size: 8px;
+    }
   }
 
-  @media(max-height:600px){
+  @media(max-height:600px) and (min-width:800px){
     .text-block {
       top: 15%;
       left: 15%;
       font-size: 16px;
-      padding-right: 20px;
+      padding-right: 400px;
 
     }
   }
 
-  @media(max-height:450px) {
+  @media(max-height:500px) {
     .text-block {
       top: 4%;
       font-size: 12px;
