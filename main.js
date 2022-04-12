@@ -4,7 +4,7 @@ const d = new Date();
 let year = d.getFullYear();
 let y = year - 1;
 document.getElementById("AY").innerHTML = "Admission Open For AY " + y + "-" + year;
-document.getElementById("AO").innerHTML="Admissions Open for Academic Year "+y+"-"+year+" | Call us for more details on +91 8275 31 21 52 || Best ANM College in Lonar(Buldhana) Maharashtra"
+document.getElementById("AO").innerHTML="Admissions Open for Academic Year "+y+"-"+year+" | Call us for more details on +91 9881 21 19 13 || Best ANM College in Lonar(Buldhana) Maharashtra"
 document.getElementById("year").innerHTML=year;
 
 //============================ sticky navbar ======================

@@ -348,6 +348,8 @@ img {vertical-align: middle;}
 
 
 /*------------------------- About us------------------ */
+
+
 .about-us-text{
   text-align: center;
 color: var(--main-color);
@@ -360,6 +362,7 @@ padding: 20px 20px 100px 20px;
   text-align: left;
 
 }
+
 .about-title{
   justify-content: center;
   color: #fff;
@@ -514,6 +517,46 @@ hr{
   margin: 20px 30%;
 
 }
+
+/* ============================ all pages ======================*/
+.about-us-container,
+.contact-us-container{
+  background-color: #000;
+}
+
+.eligibility-title{
+  text-align: center;
+  padding: 30px 100px 0 100px;
+  font-weight: 800;
+  font-size: 30px;
+  color: white;
+}
+.anm{
+  text-align: center;
+  padding: 30px 100px 0 100px;
+  font-weight: 600;
+  font-size: 30px;
+  color: #e8e8e8;
+}
+
+ul .eligibility-info {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.eligibility-info li{
+  unicode-bidi: isolate;
+  font-variant-numeric: tabular-nums;
+  text-transform: none;
+  text-indent: 0px !important;
+  text-align: start !important;
+  text-align-last: start !important;
+}
+/* ============================ all pages ======================*/
 
 
 
