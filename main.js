@@ -3,8 +3,26 @@
 const d = new Date();
 let year = d.getFullYear();
 let y = year - 1;
-document.getElementById("AY").innerHTML = "Admission Open For AY " + y + "-" + year;
-document.getElementById("AO").innerHTML="Admissions Open for Academic Year "+y+"-"+year+" | Call us for more details on +91 9881 21 19 13 || Best ANM College in Lonar(Buldhana) Maharashtra"
+let yy = year+1;
+var month = d.getMonth();
+/*
+current year= 2022
+if(n<5)= 2021-2022
+else =2022-2023
+next year 2023
+if(n<5)= 2022-2023
+ */
+
+if (month <=5) {
+  document.getElementById("AY").innerHTML = "Admission Open For AY " + y + "-" + year;
+document.getElementById("AO").innerHTML="Admissions Open for Academic Year "+y+"-"+year+" | Call us for more details on +91 9881 21 19 13 || Best A.N.M College in Vidharbha at Lonar(Buldhana) Maharashtra"
+}
+else{
+  document.getElementById("AY").innerHTML = "Admission Open For AY " + year + "-" + yy;
+  document.getElementById("AO").innerHTML="Admissions Open for Academic Year "+year+"-"+yy+" | Call us for more details on +91 9881 21 19 13 || Best A.N.M College in Vidharbha at Lonar(Buldhana) Maharashtra"
+  
+}
+
 document.getElementById("year").innerHTML=year;
 
 //============================ sticky navbar ======================
