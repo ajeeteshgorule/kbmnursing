@@ -320,6 +320,9 @@ img {vertical-align: middle;}
 }
 
 /* The dots/bullets/indicators */
+.dotContainer{
+  text-align:center
+}
 .dot {
   cursor: pointer;
   height: 15px;
