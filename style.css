@@ -19,7 +19,25 @@ body{
     background: #464646;
 }
 
+.notification {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+}
 
+
+
+.notification .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 5px ;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}
 
 
 
@@ -321,6 +339,7 @@ img {vertical-align: middle;}
 
 /* The dots/bullets/indicators */
 .dotContainer{
+  margin-top: 10px;
   text-align:center
 }
 
