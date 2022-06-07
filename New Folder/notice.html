@@ -29,18 +29,19 @@
     <!--icon -->
 
     <script src="https://kit.fontawesome.com/b35cd77d34.js" crossorigin="anonymous"></script>
-
-
-    <style>
-        .noticeBoard a{
-            color: white;
-        }
-        .noticeBoard a:hover{
-            color: #21aaba;
-        }
-
-    </style>
+<style>
+    .noticeTitle{
+    text-align: center;
+}
+marquee{
+    width: 40%;
+    height: 40%; 
+    border: 1px solid black;
+    color: black   ;   
+}
+</style>
 </head>
+
 <body>
     <div class="admission-open">
         <svg data-ux="SVG" viewBox=" 0 0 35 35" dataaids="SEASONAL_WINTER_RIGHT_ICON_RENDERED"
@@ -64,6 +65,7 @@
 
     <!-- ============================= Navbar  ============================= -->
 
+
     <nav id="navbar">
         <div>
             <h1 class="logo">DR.K.B.MAPARI INSTITUTE OF NURSING,(ANM),LONAR</h1>
@@ -84,44 +86,44 @@
         </ul>
 
     </nav>
-     <!-- ============================= marquee============================= -->
-     <div class="AO-AO">
+
+    <!-- ============================= marquee============================= -->
+    <div class="AO-AO">
         <marquee id="AO"></marquee>
     </div>
+      <!-- ==============display notice board========== -->
+  <div style="text-align: center;"> <h2>Notice Display</h2>
+    <marquee   direction="up"  scrollamount="1" onmouseover="this.stop();"
+            onmouseout="this.start();">
+    
+            <h6 id="div">
+    
+            </h6>
+        </marquee>
+    </div>
 
-    <div class="noticeContainer"> 
-        <h2 class="about-us-text">NOTICE BOARD</h2>
-        <marquee class="noticeBoard"  direction="up" scrollamount="2" onmouseover="this.stop();"
-                onmouseout="this.start();">
-        
-                <p id="div">
-        
-                </p>
-            </marquee>
-            <p class="note" >● = this is only text. ‣ = hyperlink text.</p>
-            
-        </div>
-         <!--============================= copyright =========================-->
+      <!--============================= copyright =========================-->
 
-  <div class="copyright notice-copyright">
+  <div class="copyright">
     <span>Copyright © <span id="year"></span> Dr. K. B. Mapari Institute of Nursing, (ANM), Lonar - All Rights
       Reserved.</span>
-
     <hr>
-    <p>
+    <div class="design">
         <a class="d-name" href="admin.html">Admin Login</a>
-</p >
+        </div>
     <div class="design">
       <span>designed by <a class="d-name" href="https://rebrand.ly/ajeeteshgorule">Ajeetesh Gorule</a></span>
     </div>
   </div>
 
-<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
-    <!-- <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script> -->
-    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
-    <script src="firebase.js"></script>
-    <script src="notice.js"></script>
-    <script src="main.js"></script>
+  <script src="firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+  <!--============================= java Script =========================-->
+  <!-- <script src="main.js"></script> -->
+  <script src="notice.js"></script>
+  
 
 </body>
 

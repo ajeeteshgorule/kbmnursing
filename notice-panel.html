@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="/favicon.png">
+    <title id="title">Notice panel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="notice-panel.css">
+  
+</head>
+
+<body id="body">
+    <div class="containers">
+    <div class="session " id="session"><p>
+         <!-- Session close in  -->
+         <span id="time" >Session close in 10:00 minutes!</span> 
+         <!-- minutes! -->
+        </p></div>
+    <div class="users">
+        <span id="user" class="text-succes title"></span>
+        <button onclick="logout()" class="logout ">Logout</button>
+        
+    </div>
+</div>
+<div class="btnNew">
+<button type="button" class="btn btn-primary my-2 " data-toggle="modal" data-target="#exampleModalCenter"
+onclick="Fillboxes(null)">Add New Record </button></div>
+
+<h2 class="noticeTitle" >Notice Board Panel</h2>
+
+<div class="container ">
+<table class="table  " >
+    <thead>
+        <th>Sno</th>
+        <th>Notice</th>
+        <th>Date</th>
+        <th>Link</th>
+        <!-- <th>gender</th> -->
+        <th>control center</th>
+    </thead>
+    <tbody id="tbody1">
+        <!-- <tr>
+        <td>1</td>
+        <td>ajeetesh</td>
+        <td>53</td>
+        <td>b</td>
+        <td>male</td>
+    </tr> -->
+
+    </tbody>
+    
+
+</table>
+</div >
+<div style="text-align: center;"> <h2>Notice Display</h2>
+<marquee   direction="up"  scrollamount="1" onmouseover="this.stop();"
+        onmouseout="this.start();">
+
+        <h6 id="div">
+
+        </h6>
+    </marquee>
+<!-- <marquee  width="40%" direction="up" height="40%" scrollamount="1" onmouseover="this.stop();"
+        onmouseout="this.start();" style="border: 1px solid black;">
+
+        <h6 id="div">
+
+        </h6>
+    </marquee> -->
+</div>
+
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" onclick="Fillboxes(null)">
+Launch demo modal
+</button> -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Notice Board</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <label class="labs">Notice: </label>
+            <input type="text" id="NoticeMod" placeholder="Enter Notice" required><br>
+            <label class="labs">Date: </label>
+            <input type="text" id="DateMod"><br>
+            <label class="labs">Link: </label>
+            <input type="text" id="LinkMod" placeholder="do you have redirect link for text enter here"><br>
+            <!-- <label class="labs">Gender: </label>
+            <input type="text" id="GenMod"><br> -->
+            <!-- <p style="font-size: 8px;">click me</p> -->
+
+            ...
+        </div>
+        <div class="modal-footer">
+            <button id="AddModBtn" type="button" class="btn btn-primary" onclick="AddNotice()">Add New
+                Record</button>
+            <button id="UpdModBtn" type="button" class="btn btn-success" onclick="UpdNotice()">Update
+                Record</button>
+            <button id="DelModBtn" type="button" class="btn btn-danger" onclick="DelNotice()">Delete
+                Record</button>
+
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+    <script src="firebase.js"></script>
+    <script src="notice-panel.js"></script>
+</body >
+
+</html>

@@ -1,0 +1,110 @@
+body{
+    margin: none;
+
+
+}
+.title{
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 50%;
+    background-color: #4BB543;
+    border-radius: 25px;
+}
+
+.containers{
+    /* background-color: #21aaba; */
+    padding-bottom:10px;
+}
+.session{
+    text-align: center;
+    color: #ffffff;
+    background-color: rgb(245, 185, 73);
+    font-size: 10px;
+    
+
+}
+
+.users{
+    position: relative; 
+    top: 0px;
+    right: 10px; 
+    width: 100%; 
+    text-align:right;
+    font-size: 16px;
+    padding-bottom: 10px;
+    border-bottom:1px solid black;
+}
+.logout{
+    color: #fff;
+    background-color: #dc3545;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+   
+    border: 1px solid transparent;
+    /* padding: ; */
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+}
+.logout:hover{
+    background-color: #be2131;
+
+
+}
+
+.btnNew{
+    position: relative; 
+    top: 0px;
+    right: 10px; 
+    text-align:right;
+    font-size: 16px;
+    padding-bottom: 10px;
+    
+}
+.noticeTitle{
+    text-align: center;
+}
+marquee{
+    width: 40%;
+    height: 40%; 
+    border: 1px solid black;
+    color: black   ;   
+}
+
+.labs {
+    display: inline-block;
+    width: 100px;
+}
+a{
+    color: black;
+}
+/* .table{
+    min-width: 30%;
+} */
+
+/* @media only screen and (max-width: 600px){
+   
+    .session{
+        position: relative; 
+        top: auto;
+    }
+
+
+}*/
+@media(max-width:600px){
+.containers,.btnNew{
+    width: 110vh;
+}
+} 

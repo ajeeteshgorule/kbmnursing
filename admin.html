@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- === Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="/favicon.png">
+
+    <!-- ===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="admin.css">
+
+    <title>Admin Login</title>
+    <style>
+        a{
+            /* color: #21aaba; */
+            color: #000;
+        }
+        a:hover{
+            color: #21aaba;        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="forms">
+            <div class="form login">
+                <span class="title">Login</span>
+
+              
+
+                <form onsubmit="login()" id="loginForm" class="card-body px-5 py-4"  action="#">
+                    <center><small><span id="error" style="color: red"></span></small></center>
+                
+                        <div class="input-field">
+                        
+                        <input id="email" type="text" placeholder="Enter your email" required />
+                        <i class="uil uil-envelope icon"></i>
+
+                
+                </div>
+
+                <div class="input-field">
+                    <label class="custom-field">
+                        <input id="password" class="password" type="password" placeholder="Enter your password" required />
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    
+                </div>
+                
+        
+                    <div class="input-field button">
+                        <button > <input type="submit" value="Login Now"></button>
+
+                    </div>
+                    <div style="margin-top: 30px;;
+                    text-align: center; color: #21aaba;"  >
+                        <a href="index.html">Home</a>
+                        <a href="course.html">Course</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="notice.html">Notice</a>
+                    </div>
+                </form>
+
+
+
+
+
+                <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+       
+                <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+
+
+            </div>
+
+
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+
+    <script src="firebase.js"></script>
+    <script src="admin.js"></script>
+</body>
+
+</html>
