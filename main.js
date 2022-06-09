@@ -13,7 +13,7 @@ next year 2023
 if(n<5)= 2022-2023
  */
 
-if (month <=5) {
+if (month <=4) {
   document.getElementById("AY").innerHTML = "Admission Open For AY " + y + "-" + year;
 document.getElementById("AO").innerHTML="Admissions Open for Academic Year "+y+"-"+year+" | Call us for more details on +91 9881 21 19 13 || Best A.N.M College in Vidharbha at Lonar(Buldhana) Maharashtra"
 }
