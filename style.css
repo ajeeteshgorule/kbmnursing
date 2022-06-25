@@ -630,6 +630,16 @@ hr{
 .note{
   font-size: 8px;
 }
+.noticeBoard a{
+  color: white;
+}
+.noticeBoard a:hover{
+  color: #21aaba;
+}
+#div p  {
+  margin-bottom: 50px;
+  
+}
 
 
 
