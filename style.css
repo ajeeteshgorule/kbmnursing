@@ -39,7 +39,15 @@ body{
   color: white;
 }
 
-
+.bar_badge{
+  position: absolute;
+  top: -14px;
+  right: -3px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}
 
 
 @-webkit-keyframes rotating{
